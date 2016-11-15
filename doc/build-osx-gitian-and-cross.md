@@ -4,7 +4,6 @@
 This is about **crosscompilation for Mac OS X**, that is:
 
 you run the build process *on host* that is: **Linux Ubuntu in Gitian** (from any system that can run Gitian, usually a Linux)
-
 and you build program that will be **used on target**: some **Mac OS X** (darwin).
 
 (This also can apply when crosscompiling from some other Linux, not just for use from/via Gitian).
