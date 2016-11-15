@@ -1,9 +1,8 @@
 
-# Cossbuild from Linux, for Macintosh / OSX / Mac OS X, e.g. using Gitian.
+# Cossbuild from Linux, for Macintosh / OSX / Mac OS X / Darwin, e.g. using Gitian.
 
 This is about **crosscompilation for Mac OS X**, that is:
-
-you run the build process *on host* that is: **Linux Ubuntu in Gitian** (from any system that can run Gitian, usually a Linux)
+you run the build process *on host* that is: **Linux Ubuntu in Gitian** (running from Linux)
 and you build program that will be **used on target**: some **Mac OS X** (darwin).
 
 (This also can apply when crosscompiling from some other Linux, not just for use from/via Gitian).
