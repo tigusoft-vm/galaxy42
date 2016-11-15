@@ -1,24 +1,11 @@
-
-
-Here's a line for us to start with.  
-This line is separated from the one above by two newlines, so it will be a *separate paragraph*.
-
-This line is also a separate paragraph, but...  
-This line is only separated by a single newline, so it's a separate line in the *same paragraph*.
-
-
-
-
 # Cossbuild from Linux, for Macintosh / OSX / Mac OS X / Darwin, e.g. using Gitian.
 
-This is about **crosscompilation for Mac OS X**, that is:
-
-you run the build process *on host* that is: **Linux Ubuntu in Gitian** (running from Linux)
-and you build program that will be **used on target**: some **Mac OS X** (darwin).
-
+This is about **crosscompilation for Mac OS X**, that is:  
+you run the build process *on host* that is: **Linux Ubuntu in Gitian** (running from Linux)  
+and you build program that will be **used on target**: some **Mac OS X** (darwin).  
 (This also can apply when crosscompiling from some other Linux, not just for use from/via Gitian).
 
-This build process *requires Apple SDK* (see instructions below), which has some licencing limitations.
+This build process *requires Apple SDK* (see instructions below), which has some licencing limitations.  
 Check yourself can you use this files outside of an Apple device (e.g. other then running Linux in VM on Apple)
 under the law system that applies to you.
 
