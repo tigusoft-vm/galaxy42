@@ -1,13 +1,22 @@
-This is about crosscompilation for Mac OS X, that is:
-you run the build process on: *Linux Ubuntu in Gitian* (though this instructions should work on other Linuxes too)
-and you build program that will be used on: some *Mac OS X* (darwin).
 
-This build process requires Apple SDK, which has some licencing limitations.
+# Cossbuild from Linux, for Macintosh / OSX / Mac OS X, e.g. using Gitian.
+
+This is about *crosscompilation for Mac OS X*, that is:
+you run the build process *on host* that is: *Linux Ubuntu in Gitian* (from any system that can run Gitian, usually a Linux)
+and you build program that will be *used on target*: some *Mac OS X* (darwin).
+(This also can apply when crosscompiling from some other Linux, not just for use from/via Gitian).
+
+This build process *requires Apple SDK* (see instructions below), which has some licencing limitations.
 Check yourself can you use this files outside of an Apple device (e.g. other then running Linux in VM on Apple)
 under the law system that applies to you.
 
+On your linux, run {{{ ./build-gitian -M image }}}.
+*How ever - currently this is NOT WORKING*, it will be fixed in future version. *TODO* (lib boost::locale crossbuild problems).
+
+# How to process works:
+
 Run all actions on Gitian as an user (default user of Gitian),
-except for installing packages from repository - do this in Gitian as root.
+except for installing packages from repository - do this inside Gitian as root.
 
 Steps:
 - get Apple SDK, as described in [../contrib/macdeploy/README_osx.md](readme about Mac deploy)
@@ -44,7 +53,7 @@ Other source of deps to check is [https://github.com/tpoechtrager/osxcross/blob/
 ```apt-get install -y clang llvm-dev libxml2-dev uuid-dev libssl-dev bash patch make tar xz-utils bzip2 gzip sed cpio```
 
 
-# Work in progress
+# Some other notes on researching this topic
 
 This almost works:
 
