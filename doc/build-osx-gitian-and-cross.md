@@ -1,9 +1,12 @@
 
 # Cossbuild from Linux, for Macintosh / OSX / Mac OS X, e.g. using Gitian.
 
-This is about *crosscompilation for Mac OS X*, that is:
-you run the build process *on host* that is: *Linux Ubuntu in Gitian* (from any system that can run Gitian, usually a Linux)
-and you build program that will be *used on target*: some *Mac OS X* (darwin).
+This is about **crosscompilation for Mac OS X**, that is:
+
+you run the build process *on host* that is: **Linux Ubuntu in Gitian** (from any system that can run Gitian, usually a Linux)
+
+and you build program that will be **used on target**: some **Mac OS X** (darwin).
+
 (This also can apply when crosscompiling from some other Linux, not just for use from/via Gitian).
 
 This build process *requires Apple SDK* (see instructions below), which has some licencing limitations.
@@ -11,7 +14,7 @@ Check yourself can you use this files outside of an Apple device (e.g. other the
 under the law system that applies to you.
 
 On your linux, run {{{ ./build-gitian -M image }}}.
-*How ever - currently this is NOT WORKING*, it will be fixed in future version. *TODO* (lib boost::locale crossbuild problems).
+**How ever - currently this is NOT WORKING**, it will be fixed in future version. *TODO* (lib boost::locale crossbuild problems).
 
 # How to process works:
 
